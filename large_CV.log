@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.5.30)  30 MAY 2019 17:02
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.5.30)  31 MAY 2019 08:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Untitled.tex
-(./Untitled.tex
+**large_CV.tex
+(./large_CV.tex
 LaTeX2e <2018-12-01>
 (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
@@ -1271,8 +1271,8 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 \@quotelevel=\count432
 \@quotereset=\count433
-(./Untitled.aux)
-\openout1 = `Untitled.aux'.
+(./large_CV.aux)
+\openout1 = `large_CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
 LaTeX Font Info:    ... okay on input line 156.
@@ -1392,19 +1392,19 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 156.
 LaTeX Info: Redefining \pageref on input line 156.
 LaTeX Info: Redefining \nameref on input line 156.
-(./Untitled.out) (./Untitled.out)
+(./large_CV.out) (./large_CV.out)
 \@outlinefile=\write7
-\openout7 = `Untitled.out'.
+\openout7 = `large_CV.out'.
 
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout6 = `Untitled.bcf'.
+\openout6 = `large_CV.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Untitled.bbl' found.
-(./Untitled.bbl
+Package biblatex Info: ... file 'large_CV.bbl' found.
+(./large_CV.bbl
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 50.
 )
@@ -1450,76 +1450,68 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 178.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/bx/n' will be
 (Font)              scaled to size 16.0pt on input line 178.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
-able
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
-able
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 180.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 180.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/bx/n' will be
 (Font)              scaled to size 10.95pt on input line 189.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 189.
+
+Overfull \hbox (24.42293pt too wide) in paragraph at lines 188--193
+[][] 
+ []
+
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 194.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 194.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 227.
+(Font)              scaled to size 10.95pt on input line 197.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 236.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 227.
+(Font)              scaled to size 10.0pt on input line 236.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 236.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+(Font)              scaled to size 8.0pt on input line 236.
 [1
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 255.
+(Font)              scaled to size 10.00107pt on input line 264.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 255.
+(Font)              scaled to size 7.00075pt on input line 264.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 255.
+(Font)              scaled to size 5.00053pt on input line 264.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 255.
+(Font)              scaled to size 9.99893pt on input line 264.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 255.
+(Font)              scaled to size 6.99925pt on input line 264.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 255.
+(Font)              scaled to size 4.99947pt on input line 264.
+
+Overfull \hbox (0.39009pt too wide) in paragraph at lines 280--283
+[]\TU/SourceSansPro(0)/m/n/10.95 Workshop leader, \TU/SourceSansPro(0)/m/it/10.
+95 Introduction to Generalized Additive Modeling\TU/SourceSansPro(0)/m/n/10.95 
+, RARGOM–Community Learning Series, Woods
+ []
+
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
-(./Untitled.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
-Package rerunfilecheck Info: File `Untitled.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+(./large_CV.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
+Package rerunfilecheck Info: File `large_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
-Package logreq Info: Writing requests to 'Untitled.run.xml'.
-\openout1 = `Untitled.run.xml'.
+Package logreq Info: Writing requests to 'large_CV.run.xml'.
+\openout1 = `large_CV.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46897 strings out of 494894
- 933440 string characters out of 6175453
- 1479901 words of memory out of 5000000
- 50231 multiletter control sequences out of 15000+600000
- 537174 words of font info for 117 fonts, out of 8000000 for 9000
+ 46892 strings out of 494894
+ 933014 string characters out of 6175453
+ 1481040 words of memory out of 5000000
+ 50230 multiletter control sequences out of 15000+600000
+ 537142 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  72i,11n,109p,799b,5015s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Untitled.pdf (2 pages).
+Output written on large_CV.pdf (2 pages).
