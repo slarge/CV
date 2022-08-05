@@ -2,8 +2,8 @@
 name: Scott Isaac Large
 position: "Chief, Ecosystem Dynamics and Assessment Branch"
 address: "NOAA-Fisheries, 166 Water Street, Woods Hole, Massachusetts, 02543"
-phone: +1 (508)495-2346
-email: "scott.large@noaa.gov"
+phone: +1 ‪(508)499-9833‬
+email: "scott.large@noaa.gov | largesi@gmail.com"
 twitter: ScottLarge_
 github: slarge
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -53,7 +53,8 @@ tribble(
 ) %>%
   arrange(-Start) %>%
   #filter(Start > 2000) %>%
-  mutate(End = replace_na(End, "present")) %>%
+  mutate(End = as.character(End),
+         End = replace_na(End, "present")) %>%
   mutate(Years = paste(Start, "--", End, sep = "")) %>%
   select(Years, Position) %>%
   baretable()
@@ -68,7 +69,8 @@ tribble(
   2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}"
 ) %>%
   arrange(-Start) %>%
-  mutate(End = replace_na(End, "present")) %>%
+  mutate(End = as.character(End),
+    End = replace_na(End, "present")) %>%
   mutate(Year = paste(Start, "–", End, sep = "")) %>%
   select(Year, Position) %>%
   baretable()
@@ -79,25 +81,23 @@ tribble(
 
 ## PhD thesis
 ```{r thesis}
-bibliography_entries("large_pubs.bib", startlabel = "papersstart") %>%
-  filter(bibtype == "PhdThesis")
+bibliography_entries("large_pubs.bib") %>% #, startlabel = "papersstart") %>%
+  filter(tolower(genre) == "phd thesis")
 ```
 
 ## Refereed research papers
 ```{r research-papers}
  bibliography_entries("large_pubs.bib") %>%
-   dplyr::filter(bibtype == "Article") %>%
-   dplyr::arrange(year, author)
+   dplyr::filter(tolower(type) == "article-journal") %>%
+   dplyr::arrange(issued, author)
 
 ```
 
 ## Software (R packages)
 ```{r r-packages}
 # Sort R packages by title, then year.
-bibliography_entries("Rpackages.bib",
-  startlabel = "packagestart", endlabel = "packageend"
-) %>%
-  arrange(title, year)
+bibliography_entries("Rpackages.bib") %>% 
+  arrange(title, issued)
 ```
 
 # Presentations
@@ -107,12 +107,12 @@ bibliography_entries("Rpackages.bib",
  * Invited speaker, *Quantifying trends and thresholds in responses of ecological indicators to the combined effects of fishing and environmental pressures*, Colorado State University, Fort Collins, March 2013
  * Invited speaker, *Delineating ecosystem overfishing via analysis of ecosystem indicator inflection points*, 2nd ICES/PICES conference for early career scientists. Mallorca, April 2012
 
-## Selected contributed talks
- * 
+<!-- ## Selected contributed talks -->
+<!--  *  -->
 
 # Awards
 ```{r grants}
-grants <- read_csv("Grant_income.csv")
+grants <- read_csv("Grant_income.csv", show_col_types = FALSE)
 ```
 
 ```{r awardstable, results = "asis"}
@@ -121,12 +121,14 @@ grants %>%
   mutate(
     Time = paste0(Start, ifelse(is.na(End),"",paste0("--",End))),
     Entry = Source,
-    Amount = paste("\\$",prettyNum(Amount, big.mark=","), sep="")
+    Amount = ifelse(is.na(Amount),
+                    "—", 
+                    paste("\\$", prettyNum(Amount, big.mark=","), sep=""))
   ) %>%
   arrange(Time, desc(Amount)) %>%
   select(Time, Entry, Amount) %>%
   baretable(align='llp{13.3cm}r',
-            hline.after=c(0,NROW(.)),
+            hline.after= NULL, #c(0,NROW(.)),
             size="\\fontsize{10}{16}",
             add.to.row=list(
               pos=as.list(seq(NROW(.))),
@@ -136,8 +138,8 @@ grants %>%
 
 
 # Grants
-```{r grantstable, results='asis',eval=FALSE}
-filter(Type %in% c("Research"))
+```{r grantstable, results='asis'}
+# filter(Type %in% c("Research"))
 
 grants %>%
   filter(Type %in% c("Research")) %>%
@@ -151,7 +153,7 @@ grants %>%
   arrange(Time, desc(Amount)) %>%
   select(Time, Entry, Amount) %>%
   baretable(align='llp{13.3cm}r',
-            hline.after=c(0,NROW(.)),
+            hline.after= NULL, #c(0,NROW(.)),
             size="\\fontsize{10}{16}",
             add.to.row=list(
               pos=as.list(seq(NROW(.))),
