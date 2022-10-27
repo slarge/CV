@@ -47,7 +47,7 @@ tribble(
 ```{r employment, results='asis'}
 tribble(
   ~Start, ~End, ~Position,
-  2011, 2014, "\\textbf{Post doctoral Researcher}, Integrated Statistics, Inc \\& Northeast Fisheries Science Center",
+  2011, 2014, "\\textbf{Postdoctoral Researcher}, Integrated Statistics, Inc \\& Northeast Fisheries Science Center",
   2014, 2018, "\\textbf{Professional Officer}, Advice Department -- International Council for the Exploration of the Sea (ICES)",
   2018, NA, "\\textbf{Chief}, Ecosystem Dynamics and Assessment Branch -- Northeast Fisheries Science Center"
 ) %>%
@@ -65,10 +65,11 @@ tribble(
 ```{r positions, results='asis'}
 tribble(
   ~Start, ~End, ~Position,
-  2017, 2017, "\\textbf{Stock Assessment Consultant}, \\textit{United Nations Food and Agriculture Organization (FAO)}",
-  2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}"
+  2017, 2017, "\\textbf{Stock Assessment Consultant}, United Nations Food and Agriculture Organization (FAO)",
+  2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}",
+  2022, NA, "\\textbf{Adjunct faculty}, Massachusetts Maritime Academy",
 ) %>%
-  arrange(-Start) %>%
+  arrange(desc(Start)) %>%
   mutate(End = as.character(End),
     End = replace_na(End, "present")) %>%
   mutate(Year = paste(Start, "–", End, sep = "")) %>%
@@ -88,8 +89,8 @@ bibliography_entries("large_pubs.bib") %>% #, startlabel = "papersstart") %>%
 ## Refereed research papers
 ```{r research-papers}
  bibliography_entries("large_pubs.bib") %>%
-   dplyr::filter(tolower(type) == "article-journal") %>%
-   dplyr::arrange(issued, author)
+   filter(tolower(type) == "article-journal") %>%
+   arrange(desc(issued), author)
 
 ```
 
@@ -102,8 +103,9 @@ bibliography_entries("Rpackages.bib") %>%
 
 # Presentations
 ## Invited talks
- * Workshop leader, *Delineating the Issues of Climate Change and Impacts to Marine Ecosystems: Bridging the Gap Between Research, Assessment, Policy and Management* IMBER--ClimEco4, Shanghai, June 2017.
- * Workshop leader, *Introduction to Generalized Additive Modeling*, RARGOM--Community Learning Series, Woods Hole, April 2013
+ * Invited speaker, *Transitioning basic research into applied fisheries science and management*, Dauphin Island Sea Lab, Dauphin Island, November 2022.
+ * Workshop leader, *Delineating the Issues of Climate Change and Impacts to Marine Ecosystems: Bridging the Gap Between Research, Assessment, Policy and Management*, IMBER--ClimEco4, Shanghai, June 2014.
+ * Workshop leader, *Introduction to Generalized Additive Modeling*, RARGOM--Community Learning Series,  Woods Hole, April 2013
  * Invited speaker, *Quantifying trends and thresholds in responses of ecological indicators to the combined effects of fishing and environmental pressures*, Colorado State University, Fort Collins, March 2013
  * Invited speaker, *Delineating ecosystem overfishing via analysis of ecosystem indicator inflection points*, 2nd ICES/PICES conference for early career scientists. Mallorca, April 2012
 
