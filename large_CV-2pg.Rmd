@@ -86,12 +86,13 @@ bibliography_entries("large_pubs.bib") %>% #, startlabel = "papersstart") %>%
   filter(tolower(genre) == "phd thesis")
 ```
 
-## Refereed research papers
+## Selected research papers
 <!-- In review: Badger et al, Saba et al,  *  -->
 ```{r research-papers}
  bibliography_entries("large_pubs.bib") %>%
    filter(tolower(type) == "article-journal") %>%
-   arrange(desc(issued), author)
+  tail(15) %>% 
+  arrange(desc(issued), author)
 
 ```
 
