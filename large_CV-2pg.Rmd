@@ -2,7 +2,7 @@
 name: Scott Isaac Large
 position: "Chief, Ecosystem Dynamics and Assessment Branch"
 address: "NOAA-Fisheries, 166 Water Street, Woods Hole, Massachusetts, 02543"
-phone: +1 ‪(508)499-9833‬
+phone: +1 ‪‪(508) 495-2346
 email: "scott.large@noaa.gov | largesi@gmail.com"
 twitter: ScottLarge_
 github: slarge
@@ -68,6 +68,7 @@ tribble(
   2017, 2017, "\\textbf{Stock Assessment Consultant}, United Nations Food and Agriculture Organization (FAO)",
   2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}",
   2022, NA, "\\textbf{Adjunct faculty}, Massachusetts Maritime Academy",
+  2023, NA, "\\textbf{United States Representative}, ICES Advisory Committee (ACOM)"
 ) %>%
   arrange(desc(Start)) %>%
   mutate(End = as.character(End),

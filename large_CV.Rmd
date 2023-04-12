@@ -68,6 +68,7 @@ tribble(
   2017, 2017, "\\textbf{Stock Assessment Consultant}, United Nations Food and Agriculture Organization (FAO)",
   2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}",
   2022, NA, "\\textbf{Adjunct faculty}, Massachusetts Maritime Academy",
+  2023, NA, "\\textbf{United States Representative}, ICES Advisory Committee"
 ) %>%
   arrange(desc(Start)) %>%
   mutate(End = as.character(End),
