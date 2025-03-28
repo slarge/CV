@@ -4,7 +4,6 @@ position: "Chief, Ecosystem Dynamics and Assessment Branch"
 address: "NOAA-Fisheries, 166 Water Street, Woods Hole, Massachusetts, 02543"
 phone: +1 ‪(508)499-9833‬
 email: "scott.large@noaa.gov | largesi@gmail.com"
-twitter: ScottLarge_
 github: slarge
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
@@ -23,10 +22,9 @@ source("baretable.R")
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
-```{r packages, include=FALSE}
-write_packages_bib(
- pkglist = c("fedregs"),
- file = "Rpackages.bib")
+```{r packages, include=FALSE} 
+# write_packages_bib( #  pkglist = c("fedregs"), 
+# file = "Rpackages.bib")
 ```
 
 # Education
@@ -42,8 +40,8 @@ tribble(
   baretable()
 ```
 
-
 # Employment history
+
 ```{r employment, results='asis'}
 tribble(
   ~Start, ~End, ~Position,
@@ -66,7 +64,7 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2017, 2017, "\\textbf{Stock Assessment Consultant}, United Nations Food and Agriculture Organization (FAO)",
-  2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}",
+  #2019, NA, "\\textbf{Associate Editor}, \\textit{Frontiers in Marine Science}",
   2022, NA, "\\textbf{Adjunct faculty}, Massachusetts Maritime Academy",
   2023, NA, "\\textbf{United States Representative}, ICES Advisory Committee"
 ) %>%
@@ -78,17 +76,19 @@ tribble(
   baretable()
 ```
 
-
 # Publications
 
 ## PhD thesis
+
 ```{r thesis}
 bibliography_entries("large_pubs.bib") %>% #, startlabel = "papersstart") %>%
   filter(tolower(genre) == "phd thesis")
 ```
 
 ## Refereed research papers
+
 <!-- In review: Badger et al, Saba et al,  *  -->
+
 ```{r research-papers}
  bibliography_entries("large_pubs.bib") %>%
    filter(tolower(type) == "article-journal") %>%
@@ -96,25 +96,34 @@ bibliography_entries("large_pubs.bib") %>% #, startlabel = "papersstart") %>%
 
 ```
 
-## Software (R packages)
-```{r r-packages}
-# Sort R packages by title, then year.
-bibliography_entries("Rpackages.bib") %>% 
-  arrange(title, issued)
-```
+<!-- ## Software (R packages) -->
+
+<!-- ```{r r-packages} -->
+
+<!-- # Sort R packages by title, then year. -->
+
+<!-- bibliography_entries("Rpackages.bib") %>%  -->
+
+<!--   arrange(title, issued) -->
+
+<!-- ``` -->
 
 # Presentations
+
 ## Invited talks
- * Invited speaker, *Transitioning basic research into applied fisheries science and management*, Dauphin Island Sea Lab, Dauphin Island, November 2022.
- * Workshop leader, *Delineating the Issues of Climate Change and Impacts to Marine Ecosystems: Bridging the Gap Between Research, Assessment, Policy and Management*, IMBER--ClimEco4, Shanghai, June 2014.
- * Workshop leader, *Introduction to Generalized Additive Modeling*, RARGOM--Community Learning Series,  Woods Hole, April 2013
- * Invited speaker, *Quantifying trends and thresholds in responses of ecological indicators to the combined effects of fishing and environmental pressures*, Colorado State University, Fort Collins, March 2013
- * Invited speaker, *Delineating ecosystem overfishing via analysis of ecosystem indicator inflection points*, 2nd ICES/PICES conference for early career scientists. Mallorca, April 2012
+
+-   Invited speaker, *Transitioning basic research into applied fisheries science and management*, Dauphin Island Sea Lab, Dauphin Island, November 2022.
+-   Workshop leader, *Delineating the Issues of Climate Change and Impacts to Marine Ecosystems: Bridging the Gap Between Research, Assessment, Policy and Management*, IMBER--ClimEco4, Shanghai, June 2014.
+-   Workshop leader, *Introduction to Generalized Additive Modeling*, RARGOM--Community Learning Series, Woods Hole, April 2013
+-   Invited speaker, *Quantifying trends and thresholds in responses of ecological indicators to the combined effects of fishing and environmental pressures*, Colorado State University, Fort Collins, March 2013
+-   Invited speaker, *Delineating ecosystem overfishing via analysis of ecosystem indicator inflection points*, 2nd ICES/PICES conference for early career scientists. Mallorca, April 2012
 
 <!-- ## Selected contributed talks -->
+
 <!--  *  -->
 
 # Awards
+
 ```{r grants}
 grants <- read_csv("Grant_income.csv", show_col_types = FALSE)
 ```
@@ -140,8 +149,8 @@ grants %>%
 
 ```
 
-
 # Grants
+
 ```{r grantstable, results='asis'}
 # filter(Type %in% c("Research"))
 
@@ -165,7 +174,4 @@ grants %>%
 
 ```
 
-
-
-
-##
+## 
